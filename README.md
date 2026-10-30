@@ -89,3 +89,4 @@ Read local documentation with `man 2 fork`, `man 2 waitpid`, `man 3 exec`, and `
 9. **Shared memory:** Parent and child access the same System V shared memory segment. The child changes the value from 10 to 15; the parent waits before reading it. The segment is marked for deletion and removed automatically once both processes detach.
 10. **Signal:** The parent sends `SIGUSR1` to its child. Blocking the signal before `fork()` lets the child consume it reliably with `sigwait()`, even if it arrives early.
 11. **TCP socket:** Independent server and client processes exchange greetings over localhost. TCP carries a byte stream; this example uses half-close and EOF to delimit the request and reply.
+# process
